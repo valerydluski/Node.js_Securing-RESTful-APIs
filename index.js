@@ -9,8 +9,8 @@ const PORT = 3000;
 // mongoose connection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/CRMdb', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
 // bodyparser setup
@@ -22,10 +22,6 @@ routes(app);
 // serving static files
 app.use(express.static('public'));
 
-app.get('/', (req, res) =>
-    res.send(`Node and express server is running on port ${PORT}`)
-);
+app.get('/', (req, res) => res.send(`Node and express server is running on port ${PORT}`));
 
-app.listen(PORT, () =>
-    console.log(`your server is running on port ${PORT}`)
-);
+app.listen(PORT, () => console.log(`your server is running on port ${PORT}`));
