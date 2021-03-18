@@ -1,6 +1,6 @@
 # Node.js: Securing RESTful APIs
 
-Learning objectives
+## Learning objectives
 
 - Open Web Application Security Project (OWASP)
 - Reasons for using a JSON Web Token (JWT)
